@@ -3186,7 +3186,7 @@ footer {
 .acas-box p {
   text-align: justify;
   line-height: 23px;
-  margin-bottom: 22px;
+  margin-bottom: 13px;
 }
 .acas-box hr {
   border-top: 1px solid black;
@@ -3372,16 +3372,25 @@ footer {
   font-size: 26px;
   text-transform: uppercase;
 }
-.aca-student {
+.aca-student,
+.inv-client-box {
   background-color: #f4f4f4;
   padding: 120px 0px 40px 0px;
   margin-top: 40px;
 }
-.acac-box {
+.inv-client-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.acac-box,
+.invc-box {
   background-color: white;
   padding: 40px 20px;
   text-align: center;
   position: relative;
+}
+.invc-box {
+  position: static;
 }
 .acac-box .aca-quote-img {
   position: absolute;
@@ -3391,22 +3400,28 @@ footer {
   height: 40px;
   margin: 0;
 }
+.invc-box .inv-quote-img {
+  width: 50px;
+}
 .acac-box img {
   height: 150px;
   margin-top: -120px;
 }
-.acac-box p {
+.acac-box p,
+.invc-box p {
   margin-top: 35px;
   font-size: 18px;
   color: rgb(0, 0, 0, 0.8);
   margin-bottom: 0;
 }
-.acac-box h2 {
+.acac-box h2,
+.invc-box h2 {
   margin-top: 30px;
   font-size: 22px;
   font-weight: 700;
 }
-.acac-box i {
+.acac-box i,
+.invc-box i {
   font-size: 18px;
 }
 .aca-resource {
@@ -3539,10 +3554,12 @@ footer {
   .aca-client {
     margin-top: 50px;
   }
-  .acac-box {
+  .acac-box,
+  .invc-box {
     padding: 40px 10px 16px 10px;
   }
-  .acac-box p {
+  .acac-box p,
+  .invc-box p {
     margin-top: 20px;
   }
   .aca-resource {
@@ -3716,7 +3733,8 @@ footer {
   border-left: 4px solid #ffc922;
   line-height: 30px;
 }
-.hr-cta {
+.hr-cta,
+.inv-cta {
   margin-bottom: 80px;
 }
 .hrc-box,
@@ -3852,7 +3870,8 @@ footer {
   .vrc-box h2 {
     font-size: 22px;
   }
-  .hr-cta {
+  .hr-cta,
+  .inv-cta {
     margin-bottom: 45px;
     margin-top: 25px;
   }
@@ -3871,19 +3890,37 @@ footer {
 .vr-mitigate {
   margin-top: 80px;
 }
-.vrm-row {
+.vrm-row,
+.invrm-row {
   margin-top: 40px;
   margin-bottom: 80px;
 }
 
-.vrm-img img {
+.vrm-img img,
+.invrm-img img {
   width: 100%;
 }
-.vrm-outer-box {
+.invrm-img {
+  position: relative;
+}
+.invrm-img:before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 60px;
+  top: -5%;
+  right: -30px;
+  background-color: #f4f4f4;
+  z-index: -1;
+  border-radius: 10px 0px 0px 10px;
+}
+.vrm-outer-box,
+.invrm-outer-box {
   position: relative;
   height: 100%;
 }
-.vrm-box {
+.vrm-box,
+.invrm-box {
   position: absolute;
   top: 50%;
   right: 0;
@@ -3893,19 +3930,38 @@ footer {
   border-radius: 10px;
   transform: translateY(-50%);
 }
-.vrm-box-invers {
+.invrm-box {
+  border-radius: 0px 10px 10px 0px;
+  width: 100%;
+  height: 110%;
+  padding-top: 100px;
+  padding-left: 0px;
+}
+
+.vrm-box-invers,
+.invrm-box-invers {
   right: 0;
   left: 0;
   z-index: 1;
 }
-.vrm-box h2 {
+.invrm-box-invers {
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 30px;
+}
+.invrm-img-invers:before {
+  right: 95%;
+  border-radius: 0px 10px 10px 0px;
+}
+.vrm-box h2,
+.invrm-box h2 {
   text-transform: uppercase;
   font-size: 22px;
   padding-left: 10px;
   border-left: 3px solid #ffc922;
   margin-bottom: 20px;
 }
-.vrm-box p {
+.vrm-box p,
+.invrm-box p {
   font-size: 15px;
   color: black;
   line-height: 22px;
@@ -3990,17 +4046,20 @@ img.hcs-img2 {
   .vr-mitigate {
     margin-top: 30px;
   }
-  .vrm-outer-box {
+  .vrm-outer-box,
+  .invrm-outer-box {
     height: auto;
   }
-  .vrm-box {
+  .vrm-box,
+  .invrm-box {
     position: static;
     width: 100%;
     padding: 33px 15px 33px 15px;
     margin-top: 20px;
     transform: translateY(0%);
   }
-  .vrm-row {
+  .vrm-row,
+  .invrm-row {
     margin-bottom: 0px;
   }
   .vrf-inner-box h2 {
@@ -4032,5 +4091,143 @@ img.hcs-img2 {
   .smb-box-fluid:after,
   .ccase-box-fluid:after {
     width: 8px;
+  }
+}
+/* Investigation Page */
+
+.inv-banner {
+  background-image: url("../img/investigate/Header.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 250px 0px;
+}
+.inv-banner h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  max-width: 595px;
+  border-left: 4px solid #ffc922;
+  padding-left: 18px;
+}
+.invf-box {
+  padding-bottom: 5px;
+  position: relative;
+}
+.invf-box svg {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
+.invf-box svg polyline {
+  fill: #f4f4f4;
+}
+.invf-box svg text {
+  text-anchor: middle;
+  font-size: 16px;
+  font-weight: 600;
+}
+.last-hexa {
+  margin-top: -26px;
+}
+.invf-box svg rect {
+  fill: #ffc922;
+  width: 100px;
+  height: 10px;
+}
+.invf-img img {
+  width: 100%;
+}
+.invf-row {
+  padding-top: 113px;
+}
+.invc-box {
+  position: relative;
+  padding-bottom: 110px;
+}
+.invc-img {
+  position: absolute;
+  bottom: -88px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+}
+.invc-btn {
+  margin-top: 100px;
+}
+.invrc-box {
+  padding: 70px 0px;
+  margin-bottom: 20px;
+}
+.invrc-box h2 {
+  position: static;
+  transform: translateX(0);
+  width: auto;
+}
+.invrc-box img {
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.invrc-btn {
+  margin: 30px 0px 20px 0px;
+}
+.invrc-btn a {
+  background-color: #575757;
+  padding: 15px 60px;
+  color: white;
+  transition: 0.5s;
+}
+.invrc-btn a:hover {
+  text-decoration: none;
+  background-color: #ffc922;
+  color: black;
+}
+.inv-cta {
+  margin-top: 60px;
+}
+.invrm-row {
+  margin-bottom: 120px;
+}
+
+@media screen and (max-width: 576px) {
+  .inv-banner h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .inv-banner {
+    background-position: 30%;
+    padding: 185px 0px;
+  }
+  .invrm-img:before {
+    display: none;
+  }
+  .invrm-row {
+    margin-bottom: 40px;
+  }
+  .invf-row {
+    padding-top: 18px;
+  }
+  .invf-box {
+    margin-left: -12px;
+  }
+  .last-hexa {
+    margin-top: -50px;
+  }
+  .invf-img {
+    margin-top: 40px;
+  }
+  .inv-client-box {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .invc-btn {
+    margin-top: 125px;
+  }
+  .inv-cta {
+    margin-top: 20px;
+  }
+  .invrc-box {
+    padding: 35px 0px;
   }
 }
