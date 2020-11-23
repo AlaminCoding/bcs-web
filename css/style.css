@@ -4230,4 +4230,7 @@ img.hcs-img2 {
   .invrc-box {
     padding: 35px 0px;
   }
+  .hrp-row-invers {
+    flex-direction: column-reverse;
+  }
 }
