@@ -1,7 +1,7 @@
-.smb_arrow {
+.glide__arrow {
   position: absolute;
   display: block;
-  top: 100%;
+  top: 50%;
   z-index: 2;
   color: white;
   text-transform: uppercase;
@@ -17,19 +17,19 @@
   transform: translateY(-50%);
   line-height: 1;
 }
-.smb_arrow:focus {
+.glide__arrow:focus {
   outline: none;
 }
-.smb_arrow:hover {
+.glide__arrow:hover {
   border-color: white;
 }
-.smb_arrow--left {
+.glide__arrow--left {
   left: 2em;
 }
-.smb_arrow--right {
+.glide__arrow--right {
   right: 2em;
 }
-.smb_arrow--disabled {
+.glide__arrow--disabled {
   opacity: 0.33;
 }
 

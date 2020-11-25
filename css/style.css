@@ -2181,7 +2181,7 @@ footer {
   z-index: 2;
   color: white;
   text-transform: uppercase;
-  padding: 8px 11px;
+  padding: 10px 11px;
   border: 1px solid #2c235a;
   background-color: #2c235a;
   border-radius: 50%;
@@ -2203,11 +2203,11 @@ footer {
 .home-arrow:hover {
   background-color: rgb(24, 47, 89, 0.5);
 }
-.glide__arrow--left {
+.smb-left {
   left: 45%;
   transform: translateX(-45%);
 }
-.glide__arrow--right {
+.smb-right {
   right: 45%;
   transform: translateX(-45%);
 }
@@ -2219,11 +2219,11 @@ footer {
   height: 18px;
 }
 @media screen and (max-width: 765px) {
-  .glide__arrow--left {
+  .smb-left {
     left: 42%;
     transform: translateX(-42%);
   }
-  .glide__arrow--right {
+  .smb-right {
     right: 42%;
     transform: translateX(42%);
   }
@@ -3068,7 +3068,9 @@ footer {
   margin-bottom: 10px;
 }
 .aca-banner,
-.ccsp-banner {
+.ccsp-banner,
+.cor-banner,
+.law-banner {
   background-image: url("../img/academy/Academy-header.png");
   background-position: center;
   background-size: cover;
@@ -3085,7 +3087,9 @@ footer {
   margin-bottom: 10px;
 }
 .aca-banner h2,
-.ccsp-banner h2 {
+.ccsp-banner h2,
+.cor-banner h2,
+.law-banner h2 {
   color: white;
   font-family: "Roboto Slab", serif;
   text-transform: uppercase;
@@ -4099,6 +4103,7 @@ img.hcs-img2 {
     width: 8px;
   }
 }
+
 /* Investigation Page */
 
 .inv-banner {
@@ -4310,12 +4315,14 @@ img.hcs-img2 {
   margin-top: 6px;
   margin-right: 7px;
 }
-.ccsp-details {
+.ccsp-details,
+.ct-details {
   margin-top: 80px;
   text-align: center;
   padding-bottom: 40px;
 }
-.ccsp-details p {
+.ccsp-details p,
+.ct-details p {
   color: black;
   margin: 30px 0px;
   font-size: 18px;
@@ -4323,7 +4330,8 @@ img.hcs-img2 {
   margin-bottom: 40px;
 }
 
-.ccsp-details a {
+.ccsp-details a,
+.ct-details a {
   background-color: #575757;
   color: white;
   padding: 9px 20px;
@@ -4331,7 +4339,8 @@ img.hcs-img2 {
   transition: 0.5s;
   border: 2px solid #575757;
 }
-.ccsp-details a:after {
+.ccsp-details a:after,
+.ct-details a:after {
   content: "";
   position: absolute;
   width: 115%;
@@ -4342,13 +4351,15 @@ img.hcs-img2 {
   z-index: -1;
   transition: 0.5s;
 }
-.ccsp-details a:hover {
+.ccsp-details a:hover,
+.ct-details a:hover {
   color: black;
   text-decoration: none;
   background-color: white;
   border: 2px solid #1c8517;
 }
-.ccsp-details a:hover:after {
+.ccsp-details a:hover:after,
+.ct-details a:hover:after {
   background-color: #575757;
   border: 2px solid #575757;
 }
@@ -4434,8 +4445,9 @@ img.hcs-img2 {
   margin-bottom: 15px;
 }
 .ccsp-cta-box p {
-  color: #030303;
+  color: black;
   margin-bottom: 0;
+  font-size: 18px;
 }
 .ccsp-cta-box a {
   position: absolute;
@@ -4458,6 +4470,8 @@ img.hcs-img2 {
   background-color: #f4f4f4;
   padding: 60px 0px 1px 0px;
   margin-top: 30px;
+  border-top: 3px solid #1c8517;
+  border-bottom: 3px solid #1c8517;
 }
 .ccspr-img img {
   width: 100%;
@@ -4522,7 +4536,8 @@ img.hcs-img2 {
     margin-bottom: 20px;
     padding: 25px 20px 10px 20px;
   }
-  .ccsp-details {
+  .ccsp-details,
+  .ct-details {
     margin-top: 50px;
     padding-bottom: 30px;
   }
@@ -4559,4 +4574,409 @@ img.hcs-img2 {
     height: auto;
     margin-top: 20px;
   }
+}
+.cor-banner {
+  background-image: url("../img/corporate-training/Bg.jpg");
+}
+.cor-about {
+  margin-top: 60px;
+}
+.cor-about h2 {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+.cora-box {
+  text-align: center;
+}
+svg .circle1 {
+  height: 100%;
+  width: 100%;
+  stroke: #1c8517;
+  stroke-width: 10px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: calc(502 - (502 * 70) / 100);
+  transform-origin: center;
+  animation-name: circle1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+svg .circle2,
+svg .circle4 {
+  height: 100%;
+  width: 100%;
+  stroke: rgb(87, 87, 87, 0.3);
+  stroke-width: 10px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: calc(502 - (502 * 100) / 100);
+}
+svg .circle3 {
+  height: 100%;
+  width: 100%;
+  stroke: #1c8517;
+  stroke-width: 10px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: calc(502 - (502 * 50) / 100);
+  transform: rotate(180deg);
+  transform-origin: center;
+  transform-origin: center;
+  animation-name: circle3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes circle1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes circle3 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+svg text {
+  font-size: 30px;
+  font-weight: 700;
+}
+.cora-box p {
+  color: black;
+}
+.cora-row {
+  margin-top: 30px;
+}
+.cor-important {
+  margin-top: 60px;
+}
+.cori-img img {
+  width: 100%;
+}
+.cor-title {
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-size: 26px;
+}
+.cori-row {
+  margin-top: 60px;
+}
+.cori-list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.cori-list ul {
+  background-color: #f4f4f4;
+  list-style: none;
+  margin: 0;
+  padding: 10px 25px;
+  border-radius: 10px 0px 0px 10px;
+  position: relative;
+}
+.cori-list ul li {
+  margin: 20px 0px;
+}
+
+.cori-list ul li i {
+  color: #1c8517;
+  font-size: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.cori-list ul li h2 {
+  font-size: 18px;
+}
+.cori-list ul li p {
+  font-size: 15px;
+  line-height: 20px;
+  color: black;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.cori-list ul:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  top: 0;
+  right: -50px;
+  background-color: #f4f4f4;
+  border-radius: 0px 10px 10px 0px;
+  z-index: 1;
+}
+.ccspi-inner {
+  background-color: #f4f4f4;
+  padding: 50px 0px;
+  position: relative;
+  border-radius: 0px 10px 10px 0px;
+}
+.ccspi-inner:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  top: 0;
+  left: -50px;
+  background-color: #f4f4f4;
+  border-radius: 10px 0px 0px 10px;
+}
+.cm-box {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+.cm-box h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.cm-box p {
+  margin-bottom: 0;
+  font-size: 16px;
+  margin-top: 12px;
+}
+.cm-row {
+  margin-top: 40px;
+}
+.ct-img {
+  padding: 0px 10px;
+}
+.ct-img img {
+  width: 100%;
+}
+.ct-slide {
+  padding-bottom: 50px;
+}
+.ct-arrows .glide__arrow {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  top: 120%;
+}
+.left-arrow-img,
+.right-arrow-img {
+  background-color: #1c8517;
+  padding: 4px 8px;
+}
+.left-arrow-img img,
+.right-arrow-img img {
+  width: 20px;
+}
+.ct-arrows .glide__arrow--left {
+  left: 90%;
+}
+.ct-arrows .glide__arrow--right {
+  right: 0;
+}
+.ccsp-cta .ct-cta-btn {
+  position: static;
+  padding: 10px 50px;
+}
+.ct-track {
+  background-color: white;
+  padding-top: 20px;
+}
+.ctc-border {
+  border-top: 3px solid #1c8517;
+  padding-top: 10px;
+}
+.ct-outer {
+  border-top: 3px solid #1c8517;
+  border-bottom: 3px solid #1c8517;
+}
+.ct-details {
+  margin-top: 90px;
+}
+.ct-slide {
+  margin-top: 30px;
+}
+@media screen and (max-width: 575px) {
+  .cor-banner {
+    background-position: 40%;
+    padding: 160px 0px;
+  }
+  .cor-about {
+    margin-top: 40px;
+  }
+  .cor-important {
+    margin-top: 40px;
+  }
+  .cori-row {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  .cori-list ul:after {
+    display: none;
+  }
+  .cori-list ul {
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  .ct-details {
+    margin-top: 40px;
+  }
+  .ccspi-inner {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .ccspi-inner:after {
+    display: none;
+  }
+  .cm-box {
+    margin-bottom: 20px;
+  }
+  .ct-arrows .glide__arrow--left {
+    left: 65%;
+  }
+}
+/* Law Inforcement Training */
+.law-banner {
+  background-image: url("../img/law_enforcment/header.png");
+  padding: 250px 0px;
+}
+svg .circle5 {
+  height: 100%;
+  width: 100%;
+  stroke: #1c8517;
+  stroke-width: 10px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: calc(502 - (502 * 25) / 100);
+  transform-origin: center;
+  animation-name: circle1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+svg .circle6,
+svg .circle8 {
+  height: 100%;
+  width: 100%;
+  stroke: rgb(87, 87, 87);
+  stroke-width: 1px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: calc(502 - (502 * 100) / 100);
+}
+svg .circle7 {
+  height: 100%;
+  width: 100%;
+  stroke: #1c8517;
+  stroke-width: 10px;
+  stroke-dasharray: 502;
+  stroke-dashoffset: calc(502 - (502 * 100) / 100);
+}
+@keyframes circle1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+svg text {
+  font-size: 30px;
+  font-weight: 700;
+}
+.law-hexa {
+  position: relative;
+}
+.law-hexa svg {
+  fill: #f4f4f4;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  transform: rotate(270deg);
+}
+.law-hexa img {
+  width: 40px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+.law-hexa h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+.law-hexa p {
+  font-size: 14px;
+  line-height: 22px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  padding: 0px 0px;
+  transform: translate(-50%, -60%);
+}
+
+.le-img {
+  text-align: center;
+}
+.le-img {
+  height: 100px;
+}
+.le-img img {
+  height: 100px;
+}
+.center-slide {
+  padding: 0px 25%;
+}
+.le-arrows .glide__arrow--left {
+  left: 85%;
+}
+.lec-left {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.lec-id {
+  margin-left: 20px;
+}
+.lec-name {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 575px) {
+  .law-banner h2 {
+    font-size: 28px;
+  }
+  .law-banner {
+    padding: 190px 0px;
+    background-position: 38%;
+  }
+  .cor-about h2 {
+    font-size: 22px;
+  }
+  .center-slide {
+    padding: 0;
+  }
+  .le-arrows .glide__arrow--left {
+    left: 65%;
+}
+.lec-left .ccsps-img{
+  margin: 0 auto;
+}
+.lec-right{
+  margin-top: 0;
+  padding-top: 10px;
+}
+.lec-left{
+  padding-bottom: 20px;
+}
 }
