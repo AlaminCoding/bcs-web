@@ -3070,7 +3070,8 @@ footer {
 .aca-banner,
 .ccsp-banner,
 .cor-banner,
-.law-banner {
+.law-banner,
+.education-banner {
   background-image: url("../img/academy/Academy-header.png");
   background-position: center;
   background-size: cover;
@@ -3089,7 +3090,8 @@ footer {
 .aca-banner h2,
 .ccsp-banner h2,
 .cor-banner h2,
-.law-banner h2 {
+.law-banner h2,
+.education-banner h2 {
   color: white;
   font-family: "Roboto Slab", serif;
   text-transform: uppercase;
@@ -4260,20 +4262,27 @@ img.hcs-img2 {
 .ccspa-row {
   margin-top: 60px;
 }
-.ccspa-box {
+.ccspa-box,
+.eia-box {
   text-align: center;
 }
-.ccspa-box img {
+.ccspa-box img,
+.eia-box img {
   height: 65px;
 }
-.ccspa-box h2 {
+.ccspa-box h2,
+.eia-box h2 {
   font-family: "Roboto Slab", serif;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
   margin: 25px 0px 20px 00px;
 }
-.ccspa-box p {
+.eia-box h2 {
+  padding: 0px 50px;
+}
+.ccspa-box p,
+.eia-box p {
   margin: 0;
   font-weight: 500;
   font-size: 14px;
@@ -4290,7 +4299,7 @@ img.hcs-img2 {
 }
 .ccspf-box {
   background-color: #f5f5f5;
-  padding: 25px 20px 10px 40px;
+  padding: 25px 20px 10px 25px;
 }
 .ccspf-box h2 {
   text-align: center;
@@ -4523,7 +4532,8 @@ img.hcs-img2 {
   .ccspa-row {
     margin-top: 40px;
   }
-  .ccspa-box {
+  .ccspa-box,
+  .eia-box {
     margin-bottom: 40px;
   }
   .ccsp-for {
@@ -4968,15 +4978,95 @@ svg text {
   }
   .le-arrows .glide__arrow--left {
     left: 65%;
+  }
+  .lec-left .ccsps-img {
+    margin: 0 auto;
+  }
+  .lec-right {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+  .lec-left {
+    padding-bottom: 20px;
+  }
 }
-.lec-left .ccsps-img{
-  margin: 0 auto;
+/*Educational Training*/
+.education-banner {
+  background-image: url("../img/educational_training/header.png");
+  padding: 220px 0px;
 }
-.lec-right{
-  margin-top: 0;
-  padding-top: 10px;
+.education-banner h2 {
+  max-width: 400px;
 }
-.lec-left{
-  padding-bottom: 20px;
+.ei-benefit {
+  margin-top: 20px;
 }
+.eib-img img {
+  width: 90%;
+}
+.eib-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.eib-bar {
+  width: 100%;
+  background-color: #1c8517;
+  height: 3px;
+}
+.eib-box h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 20px 0px 15px 0px;
+}
+.eib-box p {
+  color: black;
+}
+.eib-row {
+  margin-top: 60px;
+}
+.ei-bullets {
+  left: 32px;
+}
+.eis-right p {
+  margin-top: 19px;
+}
+@media screen and (max-width: 575px) {
+  .education-banner {
+    background-position: 65%;
+    padding: 200px 0px;
+  }
+
+  .education-banner h2 {
+    font-size: 30px;
+  }
+  .eia-box h2 {
+    padding: 0px 0px;
+  }
+  .ei-row-invers {
+    flex-direction: column-reverse;
+  }
+  .eiw-img {
+    margin-top: 0;
+  }
+  .eiw-box {
+    margin-top: 30px;
+  }
+  .eib-img img {
+    width: 100%;
+  }
+  .eib-box {
+    height: auto;
+    margin-top: 30px;
+  }
+  .ei-benefit {
+    margin-top: 0px;
+  }
+  .eib-row {
+    margin-top: 35px;
+  }
+  .ies-outer {
+    margin-top: 40px;
+  }
 }
