@@ -391,8 +391,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 50px 10px 50px;
+  padding: 20px 50px 10px 10px;
   margin-top: 30px;
+}
+.irs-box-img {
+  margin-top: 30px;
+}
+.irs-box-img img {
+  width: 100%;
 }
 .is-title {
   font-family: "Roboto Slab", serif;
@@ -402,7 +408,7 @@ header {
 }
 .is-text {
   font-size: 15px;
-  margin-top: 25px;
+  margin-top: 22px;
   text-align: justify;
 }
 .is-list {
@@ -1321,6 +1327,7 @@ header {
   padding: 35px 100px;
 }
 .rs-inner-box,
+.ir-inner-box,
 .smb-inner-box,
 .c-inner-box {
   border: 3px solid #e4202c;
@@ -1333,6 +1340,9 @@ header {
 }
 .smb-inner-box {
   border: 3px solid #2c235a;
+}
+.ir-inner-box {
+  border: 3px solid #ffc922;
 }
 .rs-title {
   font-family: "Montserrat", sans-serif;
@@ -1972,6 +1982,7 @@ footer {
     font-size: 22px;
   }
   .rs-inner-box,
+  .ir-inner-box,
   .smb-inner-box,
   .c-inner-box {
     padding: 24px 5px;
