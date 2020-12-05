@@ -5210,7 +5210,9 @@ svg text {
 /* Penetration Testing */
 .pt-banner,
 .va-banner,
-.pci-banner {
+.pci-banner,
+.iso-banner,
+.hippa-banner {
   background-image: url("../img/pt/header.png");
   width: 100%;
   padding: 207px 0px;
@@ -5219,7 +5221,9 @@ svg text {
 }
 .va-banner h2,
 .pt-banner h2,
-.pci-banner h2 {
+.pci-banner h2,
+.iso-banner h2,
+.hippa-banner h2 {
   font-family: "Roboto Slab", serif;
   font-size: 30px;
   color: white;
@@ -5251,7 +5255,9 @@ svg text {
   width: 100%;
 }
 .pta-box,
-.pcia-box {
+.pcia-box,
+.isoa-box,
+.hippaa-box {
   display: flex;
   align-items: center;
   height: 100%;
@@ -5259,7 +5265,10 @@ svg text {
 .pta-box ul,
 .ptf-box ul,
 .vaf-box ul,
-.pcia-box ul {
+.pcia-box ul,
+.isoa-box ul,
+.isow-box ul,
+.hippaa-box ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -5267,25 +5276,38 @@ svg text {
 .pta-box ul li,
 .ptf-box ul li,
 .vaf-box ul li,
-.pcia-box ul li {
+.pcia-box ul li,
+.isoa-box ul li,
+.isow-box ul li,
+.hippaa-box ul li {
   color: black;
   margin: 20px 0px;
 }
-.pcia-box ul li {
+.pcia-box ul li,
+.isoa-box ul li,
+.hippaa-box ul li {
   font-size: 15px;
   line-height: 22px;
 }
 .pta-box ul li i,
 .ptf-box ul li i,
 .vaf-box ul li i,
-.pcia-box ul li i {
+.pcia-box ul li i,
+.isow-box ul li i {
   color: #e4202c;
   font-size: 14px;
   margin-top: 6px;
   margin-right: 8px;
 }
-.pcia-box ul li i {
+.isow-box ul li i {
   color: #11adf7;
+}
+.pcia-box ul li i,
+.isoa-box ul li i,
+.hippaa-box ul li i {
+  color: #11adf7;
+  margin-top: 4px;
+  margin-right: 8px;
 }
 .pt-serve {
   margin-top: 60px;
@@ -5422,7 +5444,8 @@ svg text {
 }
 
 .ptf-box ul li,
-.vaf-box ul li {
+.vaf-box ul li,
+.isow-box ul li {
   margin: 14px 0px;
 }
 .ptf-row {
@@ -5532,7 +5555,8 @@ svg text {
     margin-top: 52px;
   }
   .ptf-box,
-  .vaf-box {
+  .vaf-box,
+  .isow-box {
     margin-top: 21px;
   }
   .pt-why {
@@ -5979,5 +6003,261 @@ svg text {
   }
   .pci-12-box {
     margin-bottom: 20px;
+  }
+}
+/* ISO */
+.iso-banner {
+  background-image: url("../img/iso/header.png");
+}
+.isoa-box,
+.hippaa-box {
+  display: block;
+  height: auto;
+  margin-top: 40px;
+}
+.iso-row {
+  margin-top: 60px;
+}
+.iso-appr {
+  background-color: #f4f4f4;
+  padding: 40px 15px 15px 10px;
+  position: relative;
+  height: 100%;
+}
+.iso-appr h1 {
+  position: absolute;
+  text-align: center;
+  font-size: 32px;
+  background-color: #11adf7;
+  color: white;
+  margin: 0;
+  padding-top: 2px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.iso-appr h2 {
+  text-align: center;
+  font-size: 19px;
+}
+.iso-appr p {
+  line-height: 22px;
+  margin-bottom: 0;
+}
+.iso-import {
+  margin-top: 40px;
+}
+.iso-import h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.isoi-circle {
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+.isoi-circle svg .iso-circle1,
+.isoi-circle svg .iso-circle2,
+.isoi-circle svg .iso-circle3,
+.isoi-circle svg .iso-circle4 {
+  stroke: #11adf7;
+  stroke-width: 7px;
+  stroke-dasharray: 628;
+  stroke-linecap: round;
+  stroke-dashoffset: calc(628 - (628 * 69) / 100);
+  transform-origin: center;
+  transform: rotate(-88deg);
+}
+.isoi-circle svg .iso-circle2 {
+  stroke-dashoffset: calc(628 - (628 * 62) / 100);
+}
+.isoi-circle svg .iso-circle3 {
+  stroke-dashoffset: calc(628 - (628 * 57) / 100);
+}
+.isoi-circle svg .iso-circle4 {
+  stroke-dashoffset: calc(628 - (628 * 50) / 100);
+}
+.isoi-circle svg .iso-circle-base {
+  stroke: #e6e7e8;
+  stroke-width: 7px;
+}
+.isoi-circle svg text {
+  font-size: 40px;
+}
+
+.isoi-circle p {
+  text-align: center;
+}
+.iso-cta {
+  margin-top: 60px;
+}
+@media screen and (max-width: 575px) {
+  .iso-banner {
+    padding: 140px 0px 120px 0px;
+  }
+  .isoa-col-text {
+    margin-top: 30px;
+  }
+  .iso-appr {
+    height: auto;
+    margin-top: 50px;
+  }
+  .iso-row {
+    margin-top: 0px;
+  }
+  .iso-cta {
+    margin-top: 35px;
+  }
+}
+/* Hippa */
+.hippa-banner {
+  background-image: url("../img/hippa/header.png");
+}
+.hippaa-box {
+  margin-top: 0;
+}
+.hippaa-box ul li {
+  margin-top: 0px;
+}
+.iso-appr ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 18px;
+}
+.iso-appr ul li {
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.iso-appr ul li i {
+  color: #11adf7;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-right: 6px;
+}
+.hippa-circle {
+  text-align: center;
+  position: relative;
+}
+.hippa-circle svg .hippa-circle-outer {
+  stroke: #11adf7;
+  stroke-width: 2px;
+  stroke-dasharray: 465;
+  stroke-dashoffset: calc(465 - (465 * 50) / 100);
+}
+.hippa-circle svg .hippa-circle-inner {
+  stroke: none;
+}
+
+.hippa-circle1 {
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+.hippa-circle2 {
+  transform-origin: center;
+  transform: rotate(0deg);
+}
+.hippa-dot1,
+.hippa-dot2 {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: #11adf7;
+  border-radius: 50%;
+  top: 48%;
+}
+.hippa-dot1 {
+  left: -37px;
+}
+.hippa-dot2 {
+  right: -37px;
+}
+.hippa-circle:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 37px;
+  background-color: #11adf7;
+  top: 50%;
+  left: -30px;
+}
+.hippa-circle:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 37px;
+  background-color: #11adf7;
+  top: 50%;
+  right: -30px;
+}
+.hippa-circle-2 {
+  margin-top: 10px;
+}
+.hippa-circle-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hippa-circle {
+  width: 160px;
+  margin: 0px 14px;
+}
+.hippa-circle-2 {
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hippa-circle-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hippa-circle-2 {
+    margin-top: 0px;
+  }
+}
+.hippa-circle svg text {
+  font-size: 26px;
+}
+.hippa-circle-box h2 {
+  max-width: 190px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 17px;
+  padding: 0px 28px;
+}
+.circle1-text {
+  margin-top: 17px;
+}
+.circle2-text {
+  margin-top: 5px;
+}
+.circle-bottom {
+  margin-top: 40px;
+}
+@media screen and (max-width: 575px) {
+  .hippa-banner {
+    padding: 115px 0px;
+    background-position: 60%;
+  }
+  .hippaa-box {
+    margin-top: 30px;
+  }
+  .iso-appr ul {
+    padding-left: 5px;
+  }
+  .circle1-text {
+    margin-top: 10px;
+  }
+  .circle2-text {
+    margin-top: 10px;
+  }
+  .hippa-circle-box {
+    margin-bottom: 25px;
+  }
+  .hippa-circle2 {
+    transform: rotate(180deg);
   }
 }
