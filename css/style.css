@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&family=Roboto&display=swap");
 /* font-family: 'Montserrat', sans-serif; */
 
 section {
@@ -1485,7 +1485,7 @@ footer {
   margin-top: 20px;
 }
 .footer-box h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
 }
@@ -1510,7 +1510,7 @@ footer {
   padding-left: 5px;
 }
 .footer-box ul li a {
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   text-decoration: none;
@@ -5471,7 +5471,6 @@ svg text {
 }
 .pt-blog {
   margin-top: 60px;
-  margin-bottom: 30px;
 }
 .pt-blog-box img {
   width: 100%;
@@ -5490,7 +5489,7 @@ svg text {
 .pt-blog-row {
   background-color: #f4f4f4;
   margin-top: 30px;
-  padding: 40px 0px;
+  padding: 40px 0px 70px 0px;
 }
 @media screen and (max-width: 575px) {
   .pt-banner,
