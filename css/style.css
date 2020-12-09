@@ -5244,7 +5244,8 @@ svg text {
 .va-banner,
 .pci-banner,
 .iso-banner,
-.hippa-banner {
+.hippa-banner,
+.gdpr-banner {
   background-image: url("../img/pt/header.png");
   width: 100%;
   padding: 207px 0px;
@@ -5255,7 +5256,8 @@ svg text {
 .pt-banner h2,
 .pci-banner h2,
 .iso-banner h2,
-.hippa-banner h2 {
+.hippa-banner h2,
+.gdpr-banner h2 {
   font-family: "Roboto Slab", serif;
   font-size: 30px;
   color: white;
@@ -6633,4 +6635,54 @@ svg text {
   .plug-banner {
     padding: 150px 0px;
   }
+}
+/* GDPR */
+.gdpr-banner {
+  background-image: url("../img/gdpr/header.png");
+}
+.gdpra-box ul li {
+  margin-top: 0;
+}
+.gdpr-list {
+  list-style: none;
+  padding-left: 15px;
+}
+.gdpr-list li {
+  color: black;
+  margin: 15px 0px;
+}
+.gdpr-list li i {
+  color: #11adf7;
+  font-size: 12px;
+  margin-top: 6px;
+  margin-right: 7px;
+}
+.gdpr-flow-box img {
+  width: 90%;
+}
+.gdpr-flow-box p {
+  color: black;
+  font-weight: 500;
+  line-height: 19px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.gdpr-flow h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: black;
+}
+.gdpr-flow {
+  margin-top: 80px;
+}
+@media screen and (max-width: 575px) {
+  .gdpra-box ul li {
+    margin-top: 30px;
+  }
+  .gdpr-list {
+    margin-bottom: 0;
+  }
+  .gdpr-flow-box img {
+    width: 100%;
+}
 }
