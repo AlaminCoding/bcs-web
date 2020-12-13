@@ -3905,7 +3905,8 @@ footer {
 .vrc-box,
 .ptc-box,
 .pcic-box,
-.mtc-box {
+.mtc-box,
+.ftc-box {
   border: 4px solid #ffc922;
   padding: 80px 0px;
   text-align: center;
@@ -3915,11 +3916,16 @@ footer {
 .pcic-box {
   border: 4px solid #11adf7;
 }
+.ftc-box {
+  border: 4px solid #022e75;
+  padding: 50px 0px 110px 0px;
+}
 .hrc-box h2,
 .vrc-box h2,
 .ptc-box h2,
 .mtc-box h2,
-.pcic-box h2 {
+.pcic-box h2,
+.ftc-box h2 {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
@@ -3928,7 +3934,8 @@ footer {
 .hrc-box p,
 .vrc-box p,
 .ptc-box p,
-.pcic-box p {
+.pcic-box p,
+.ftc-box p {
   font-size: 18px;
   color: black;
   margin-bottom: 0px;
@@ -3937,7 +3944,8 @@ footer {
 .vrc-box a,
 .ptc-box a,
 .mtc-box a,
-.pcic-box a {
+.pcic-box a,
+.ftc-box a {
   position: absolute;
   color: white;
   background-color: #575757;
@@ -3952,19 +3960,22 @@ footer {
 .vrc-box a:hover,
 .ptc-box a:hover,
 .mtc-box a:hover,
-.pcic-box a:hover {
+.pcic-box a:hover,
+.ftc-box a:hover {
   color: black;
   text-decoration: none;
   transition: 0.5s;
 }
-.ptc-box a:hover {
+.ptc-box a:hover,
+.ftc-box a:hover {
   color: white;
 }
 .hrc-box a:after,
 .vrc-box a:after,
 .ptc-box a:after,
 .pcic-box a:after,
-.mtc-box a:after {
+.mtc-box a:after,
+.ftc-box a:after {
   content: "";
   position: absolute;
   height: 100%;
@@ -3978,6 +3989,9 @@ footer {
 .ptc-box a:after {
   background-color: #e4202c;
 }
+.ftc-box a:after {
+  background-color: #022e75;
+}
 .pcic-box a:after {
   background-color: #11adf7;
 }
@@ -3985,7 +3999,8 @@ footer {
 .vrc-box a:before,
 .ptc-box a:before,
 .pcic-box a:before,
-.mtc-box a:before {
+.mtc-box a:before,
+.ftc-box a:before {
   content: "";
   position: absolute;
   height: 100%;
@@ -3999,6 +4014,9 @@ footer {
 .ptc-box a:before {
   background-color: #e4202c;
 }
+.ftc-box a:before {
+  background-color: #022e75;
+}
 .pcic-box a:before {
   background-color: #11adf7;
 }
@@ -4006,7 +4024,8 @@ footer {
 .vrc-box a:hover:after,
 .ptc-box a:hover:after,
 .pcic-box a:hover:after,
-.mtc-box a:hover:after {
+.mtc-box a:hover:after,
+.ftc-box a:hover:after {
   left: 0%;
   transition: 0.5;
 }
@@ -4014,7 +4033,8 @@ footer {
 .vrc-box a:hover::before,
 .ptc-box a:hover:before,
 .pcic-box a:hover:before,
-.mtc-box a:hover:before {
+.mtc-box a:hover:before,
+.ftc-box a:hover:before {
   right: 0%;
   transition: 0.5s;
 }
@@ -4070,21 +4090,24 @@ footer {
   .vrc-box a,
   .ptc-box a,
   .pcic-box a,
-  .mtc-box a {
+  .mtc-box a,
+  .ftc-box a {
     padding: 14px 35px;
   }
   .hrc-box,
   .vrc-box,
   .ptc-box,
   .pcic-box,
-  .mtc-box {
+  .mtc-box,
+  .ftc-box {
     padding: 50px 0px;
   }
   .hrc-box h2,
   .vrc-box h2,
   .ptc-box h2,
   .pcic-box h2,
-  .mtc-box h2 {
+  .mtc-box h2,
+  .ftc-box h2 {
     font-size: 22px;
   }
   .hr-cta,
@@ -5546,8 +5569,12 @@ svg text {
   padding-bottom: 100px;
 }
 .ptc-box a,
-.mtc-box a {
+.mtc-box a,
+.ftc-box a {
   bottom: 24px;
+}
+.ft-cta {
+  margin-top: 0;
 }
 .pt-why {
   margin-top: 60px;
@@ -6472,13 +6499,13 @@ svg text {
   font-weight: 600;
   margin-top: 0;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 35px;
 }
 .f-banner p {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 25px;
 }
 .fsearch-box {
@@ -6490,7 +6517,7 @@ svg text {
   background-color: white;
   font-family: "Roboto Slab", serif;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   width: 100%;
   height: 55px;
   border-radius: 28px;
@@ -6526,22 +6553,22 @@ svg text {
 }
 .faq-category {
   border-top: 5px solid #022e75;
-  padding-top: 14px;
+  padding-top: 2px;
 }
 .faq-category h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 30px;
+  font-size: 26px;
   color: black;
   text-transform: uppercase;
 }
 .accordion {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #f4f4f4;
   color: black;
   cursor: pointer;
-  padding: 22px 18px 22px 0px;
+  padding: 16px 18px 16px 18px;
   width: 100%;
   border: none;
   text-align: left;
@@ -6584,47 +6611,11 @@ svg text {
   margin-bottom: 0;
   padding: 10px 0px;
   color: black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 /* FAQ End */
-/* FAQ CTA */
-.faq-cta {
-  background-image: url("../img/faq/faq-cta.jpg");
-  background-position: center;
-  background-size: cover;
-  background-color: rgb(0, 0, 0, 0.7);
-  background-blend-mode: overlay;
-  padding: 125px 0px;
-  text-align: center;
-}
-.faq-cta h2 {
-  font-size: 35px;
-  color: white;
-  font-family: "Roboto Slab", serif;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 60px;
-}
-.faq-cta a {
-  text-align: center;
-}
-.faq-cta a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 28px;
-  color: white;
-  border: 4px solid white;
-  padding: 12px 35px;
-  transition: 0.5s;
-}
-.faq-cta a:hover {
-  text-decoration: none;
-  color: #111624;
-  background-color: white;
-}
+
 @media screen and (max-width: 480px) {
   .f-banner {
     background-position: 85%;
@@ -6655,14 +6646,9 @@ svg text {
   .accordion:after {
     margin-top: -10px;
   }
-  .faq-cta h2 {
-    font-size: 30px;
-  }
-  .faq-cta a {
-    font-size: 20px;
-  }
-  .faq-cta {
-    padding: 150px 0px;
+
+  .fpanel {
+    padding: 0px 7px;
   }
 }
 /*Plug and Play*/
@@ -7297,7 +7283,7 @@ svg text {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 600px;
+  height: 450px;
 }
 .sign-form {
   padding: 60px 0px;
@@ -7316,6 +7302,7 @@ svg text {
   color: black;
   font-size: 18px;
   font-weight: 500;
+  margin-bottom: 8px;
 }
 .sign-auth {
   font-family: "Roboto Slab", serif;
@@ -7367,7 +7354,7 @@ svg text {
   border-radius: 0px;
   outline: 0;
   padding-left: 5px;
-  height: 30px;
+  height: 35px;
 }
 
 .sign-box .iti__selected-flag {
@@ -7382,12 +7369,9 @@ svg text {
   font-size: 14px;
   color: black;
   line-height: 20px;
+  margin-bottom: 25px;
 }
-.sign-form-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .sign-form-btn button {
   border: 2px solid #182f59;
   background-color: #182f59;
@@ -7403,6 +7387,7 @@ svg text {
   color: #182f59;
 }
 .sign-form-btn a {
+  display: inline-block;
   border: 2px solid #182f59;
   background-color: white;
   font-family: "Roboto Slab", serif;
@@ -7424,6 +7409,14 @@ svg text {
 .sign-form-btn a:hover span {
   color: white;
 }
+.form-text-alt {
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+.form-text-alt a {
+  color: #182f59;
+}
 @media screen and (max-width: 575px) {
   .sign-banner {
     height: 400px;
@@ -7432,15 +7425,84 @@ svg text {
   .sign-form h2 {
     font-size: 26px;
   }
-  .sign-form-btn {
-    flex-direction: column;
-  }
   .sign-form-btn a {
     padding: 10px 20px;
-    display: inline-block;
     margin-top: 20px;
+  }
+  .sign-form-btn {
+    text-align: center;
   }
   .sign-form form {
     padding: 10px;
   }
+}
+/* Login */
+.login-btn {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #182f59;
+  background-color: #182f59;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 35px;
+  transition: 0.5s;
+  margin-top: 28px;
+}
+.login-btn:hover {
+  border: 2px solid #182f59;
+  background-color: white;
+  color: #182f59;
+}
+.forget-text {
+  text-align: center;
+  margin-top: 15px;
+}
+.forget-text a {
+  color: #182f59;
+}
+.login-alt-btn {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.login-alt-btn a {
+  border: 2px solid #182f59;
+  background-color: white;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  color: #182f59;
+  padding: 10px 35px;
+  transition: 0.5s;
+}
+.login-alt-btn a span {
+  color: black;
+  transition: 0.5s;
+}
+.login-alt-btn a:hover {
+  border: 2px solid #182f59;
+  background-color: #182f59;
+  color: white;
+  text-decoration: none;
+}
+.login-alt-btn:hover a span {
+  color: white;
+}
+.vaf-group #newsletter {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+.vaf-group .newsletter {
+  display: inline;
+  margin-top: -2px;
+}
+.vaf-group {
+  margin-bottom: 10px;
+}
+.vaf-group label {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
 }
